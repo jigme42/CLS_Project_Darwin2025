@@ -4,7 +4,7 @@ library(sf)
 library(sp)
 
 
-setwd('C:/francis/jigme/Mataranka/Red_Lily/EVI')
+setwd('C:/jigme/Mataranka/Red_Lily/EVI')
 dir()
 eviFiles <- list.files(pattern = "\\.tif$") 
 eviFiles
@@ -35,4 +35,5 @@ for (i in 1:nlayers(evi_stack)) {
        col = "grey",  # Apply blue gradient color palette
        main = names(evi_stack)[i])  # Set the main title
 }
+
 
