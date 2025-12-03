@@ -4,7 +4,7 @@ library(sf)
 library(sp)
 
 
-setwd('C:/francis/jigme/Mataranka/Red_Lily/Water')
+setwd('C:/jigme/Mataranka/Red_Lily/Water')
 dir()
 mndwiFiles <- list.files(pattern = "\\.tif$") 
 
@@ -32,5 +32,6 @@ for (i in 1:nlayers(mndwi_stack)) {
        main = names(mndwi_stack)[i],
        axes = FALSE)  # Set the main title
 }
+
 
 
